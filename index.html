@@ -153,6 +153,10 @@
     .app-card h3{margin:5px 0;color:var(--navy);font-size:1rem}
     .app-card p{margin:5px 0 10px;color:var(--muted);font-size:.88rem}
     .app-type{display:inline-block;background:#eaf4ff;color:#075985;border-radius:999px;padding:4px 9px;font-size:.72rem;font-weight:800}
+    .document-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 25px rgba(16,36,58,.05)}
+    .pdf-preview{width:100%;height: min(78vh, 850px);min-height:520px;border:1px solid var(--line);border-radius:12px;background:#f4f7fb}
+    .document-actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 18px}
+    @media(max-width:560px){.pdf-preview{height:65vh;min-height:420px}}
     @media(max-width:800px){.apps-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:420px){.apps-grid{gap:10px}.app-card{padding:13px}.app-logo{width:52px;height:52px}}
 
@@ -190,6 +194,7 @@
         <a href="#colaborar">Cómo colaborar</a>
         <a href="#buenas-practicas">Consejos</a>
         <a href="#quiz">Evaluación</a>
+        <a href="#ficha-tecnica">Ficha técnica</a>
       </div>
     </nav>
   </header>
@@ -383,6 +388,23 @@
         </div>
         <p class="feedback" id="feedback" aria-live="polite"></p>
         <div class="quiz-footer"><span class="small-note">Selecciona una respuesta para continuar.</span><button class="btn btn-primary" id="next-btn" disabled>Siguiente →</button></div>
+      </div>
+    </section>
+
+    <section id="ficha-tecnica">
+      <div class="section-head">
+        <div><div class="kicker">07 · Información del proyecto</div><h2>Ficha técnica de Conecta+</h2></div>
+      </div>
+      <div class="document-card">
+        <p>Consulta la ficha técnica del proyecto, donde se explica el tema elegido, la justificación, las herramientas utilizadas y la declaración de uso de inteligencia artificial.</p>
+        <div class="document-actions">
+          <a class="btn btn-primary" href="ficha-tecnica-conecta.pdf" target="_blank" rel="noopener">Ver ficha técnica ↗</a>
+          <a class="btn btn-light" href="ficha-tecnica-conecta.pdf" download>Descargar PDF ↓</a>
+        </div>
+        <iframe class="pdf-preview" src="ficha-tecnica-conecta.pdf" title="Ficha técnica del proyecto Conecta+ en PDF">
+          Tu navegador no puede mostrar el PDF. <a href="ficha-tecnica-conecta.pdf">Abre la ficha técnica aquí.</a>
+        </iframe>
+        <p class="small-note">Si la vista previa no aparece en tu dispositivo, utiliza el botón “Ver ficha técnica” o “Descargar PDF”.</p>
       </div>
     </section>
 
